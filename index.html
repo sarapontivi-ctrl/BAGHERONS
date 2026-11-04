@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0b1020; --bg2:#121a33; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
+  --bg:#000000; --bg2:#111111; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
   --ink:#f4f1ea; --muted:#8e97b3;
   --a:#ff6b35; --a2:#ffb347;   /* POLPETTE */
   --b:#3d8bff; --b2:#7cd4ff;   /* ALTRA SQUADRA */
@@ -117,11 +117,11 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;margin-top:28px;let
 
   <header>
     <svg class="ball" viewBox="0 0 64 64" aria-hidden="true">
-      <circle cx="32" cy="32" r="29" fill="#f4f1ea" stroke="#0b1020" stroke-width="3"/>
+      <circle cx="32" cy="32" r="29" fill="#f4f1ea" stroke="#000000" stroke-width="3"/>
       <path d="M32 3c-6 10-6 22 0 29s18 12 29 9" fill="none" stroke="#ff6b35" stroke-width="3.5"/>
       <path d="M32 32c-7 6-20 9-28 4" fill="none" stroke="#3d8bff" stroke-width="3.5"/>
-      <path d="M32 32c2 10 10 20 18 25" fill="none" stroke="#0b1020" stroke-width="3"/>
-      <path d="M10 13c10 2 18 9 22 19" fill="none" stroke="#0b1020" stroke-width="3"/>
+      <path d="M32 32c2 10 10 20 18 25" fill="none" stroke="#000000" stroke-width="3"/>
+      <path d="M10 13c10 2 18 9 22 19" fill="none" stroke="#000000" stroke-width="3"/>
     </svg>
     <div class="kicker">Ogni martedì · si gioca</div>
     <h1>Bagherone</h1>
@@ -301,8 +301,8 @@ function drawChart(games){
   s += `<path d="${area(ptsB)}" fill="url(#gb)"/><path d="${area(ptsA)}" fill="url(#ga)"/>
     <path d="${line(ptsB)}" fill="none" stroke="#3d8bff" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
     <path d="${line(ptsA)}" fill="none" stroke="#ff6b35" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-    <circle cx="${x(n)}" cy="${y(b)}" r="6" fill="#3d8bff" stroke="#0b1020" stroke-width="3"/>
-    <circle cx="${x(n)}" cy="${y(a)}" r="6" fill="#ff6b35" stroke="#0b1020" stroke-width="3"/>`;
+    <circle cx="${x(n)}" cy="${y(b)}" r="6" fill="#3d8bff" stroke="#000000" stroke-width="3"/>
+    <circle cx="${x(n)}" cy="${y(a)}" r="6" fill="#ff6b35" stroke="#000000" stroke-width="3"/>`;
   $("chart").innerHTML = s;
   $("legA").textContent = SQUADRA_A; $("legB").textContent = SQUADRA_B;
 }
